@@ -47,6 +47,7 @@ commands will detect it and remind you to do so if necessary.
 1.3 After complete configure main.tf and outputs.tf:
 
 `terraform plan` # just output plan for apply
+
 `terraform apply` # directly deploy infrastructure
 
 2. Task-2:
