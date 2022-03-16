@@ -1,4 +1,6 @@
-1. Install last version Terraform:
+1. Task-1:
+
+1.1 Install last version Terraform:
 
 ```curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
@@ -7,7 +9,7 @@ terraform --version
 Terraform v1.1.7
 on linux_amd64
 ```
-2. terraform init # After create and specify provider and verisons for AWS and terraform:
+1.2 terraform init # After create and specify provider and verisons for AWS and terraform:
 
 in .bashrc file
 
@@ -42,9 +44,19 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
-3. After complete configure main.tf and outputs.tf:
+1.3 After complete configure main.tf and outputs.tf:
 
 `terraform plan` # just output plan for apply
 `terraform apply` # directly deploy infrastructure
 
+2. Task-2:
 
+2.1 Terraform remote state file initialize on AWS s3 bucket, but without DynamoDB for locking.
+
+2.2 Configure EC2 instance and RDS, two security-groups for EC2 Nginx and RDS instance
+
+2.3 Configure userdata.tpl in root module for EC2 instance
+
+2.4 Result attached screenshot on the learn portal homwork task2 terraform module
+
+2.5 For second task my **terraform.tfvars** file with sensitive data is being ignored by **.gitinore file**  
